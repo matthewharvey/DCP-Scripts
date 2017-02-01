@@ -1,5 +1,12 @@
 #!/bin/bash -e
 
+#Format is Title video_for_reel1 [video_for_reel2] ...
+
+#These will need changing for other projects
+#The srt2smpte script is available at https://github.com/matthewharvey/srt2smpte.git
+#The OpenDCP build I got from here (https://github.com/tmeiczin/opendcp.git) and built myself.
+#At time of writing Debian did not have a package for opendcp, so it had to be done in
+#this mildly hacky way.
 OPENDCP_J2K=`pwd`/opendcp/Build/cli/opendcp_j2k
 OPENDCP_MXF=`pwd`/opendcp/Build/cli/opendcp_mxf
 OPENDCP_XML=`pwd`/opendcp/Build/cli/opendcp_xml
